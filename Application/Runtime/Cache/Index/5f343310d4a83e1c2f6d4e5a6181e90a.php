@@ -1,0 +1,195 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="/computer/Public/i/favicon.png">
+  <link rel="stylesheet" href="/computer/Public/css/amazeui.min.css"/>
+  <style>
+    .get {
+      background: #1E5B94;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .get-title {
+      font-size: 200%;
+      border: 2px solid #fff;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .get-btn {
+      background: #fff;
+    }
+
+    .detail {
+      background: #fff;
+    }
+
+    .detail-h2 {
+      text-align: center;
+      font-size: 150%;
+      margin: 40px 0;
+    }
+
+    .detail-h3 {
+      color: #1f8dd6;
+    }
+
+    .detail-p {
+      color: #7f8c8d;
+    }
+
+    .detail-mb {
+      margin-bottom: 30px;
+    }
+
+    .hope {
+      background: #0bb59b;
+      padding: 50px 0;
+    }
+
+    .hope-img {
+      text-align: center;
+    }
+
+    .hope-hr {
+      border-color: #149C88;
+    }
+
+    .hope-title {
+      font-size: 140%;
+    }
+
+    .about {
+      background: #fff;
+      padding: 40px 0;
+      color: #7f8c8d;
+    }
+
+    .about-color {
+      color: #34495e;
+    }
+
+    .about-title {
+      font-size: 180%;
+      padding: 30px 0 50px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      background: #2d3e50;
+    }
+  </style>
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="#">电脑设备报修</a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+            data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+        class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="collapse-head">
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li class="am-active"><a href="#">首页</a></li>
+        <li><a href="#">电脑知识</a></li>
+        
+      </ul>
+
+      <a href="<?php echo U('Index');?>" class="am-topbar-right">
+        <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"><span class="am-icon-pencil"></span> 注册</button>
+      </a>
+
+      <a href="<?php echo U('Index');?>" class="am-topbar-right">
+        <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm"><span class="am-icon-user"></span> 进入后台</button>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="get">
+  <div class="am-g">
+    <div class="am-u-lg-12">
+      <h1 class="get-title">电脑设备报修</h1>
+
+      <p>
+        以“助人自助，提升自我”为宗旨，志愿为广大师生提供维护维修电脑服务。
+      </p>
+
+      <p>
+        <a href="http://amazeui.org" class="am-btn am-btn-sm get-btn">获取新get技能√</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="about">
+  <div class="am-g am-container">
+    <div class="am-u-lg-12">
+      <h2 class="about-title about-color">以“助人自助，提升自我”为宗旨</h2>
+
+      <div class="am-g">
+        <div class="am-u-lg-6 am-u-md-4 am-u-sm-12">
+          <form class="am-form" action=<?php echo U('handle');?> method="POST">
+            <label for="username" class="about-color">你的姓名</label>
+            <input id="name" name="username" type="text">
+            <br/>
+            <label for="email" class="about-color">你的邮箱</label>
+            <input id="email" name="email" type="email">
+            <br/>
+            <label for="message" class="about-color">故障描述</label>
+            <textarea id="message" name="content" ></textarea>
+            <br/>
+            <button type="submit" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-check"></i> 提 交</button>
+          </form>
+          <hr class="am-article-divider am-show-sm-only">
+        </div>
+
+        <div class="am-u-lg-6 am-u-md-8 am-u-sm-12">
+          <h4 class="about-color">关于我们</h4>
+
+          <p>我们的工作
+义务上门为广大师生维修,定期定点设定报修点进行常规工作，发布轻院IT志愿队操作系统，发布轻院师生常用电脑软件集成包，传播电脑操作实用方法简单手册；开实用应用技术培训讲座；传播计算机知识等。</p>
+          <h4 class="about-color">团队介绍</h4>
+
+          <p>以“助人自助，提升自我”为宗旨，志愿为轻院南海校区广大师生提供义务维护维修电脑服务的队伍。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2014 <a href="http://www.yunshipei.com" target="_blank">网络152 11号.</a> 符智精 
+     </p>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>

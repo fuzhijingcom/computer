@@ -1,0 +1,61 @@
+<include file="Index/header" />
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">信息修改</strong> / <small>Information Update</small></div>
+      </div>
+
+      <hr/>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+          
+
+          
+
+        </div>
+
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+          <form class="am-form am-form-horizontal" method="post" >
+          <input type="hidden" name="id" value="{$computer.id}"/>
+            <div class="am-form-group">
+              <label for="user-name" class="am-u-sm-3 am-form-label">姓名 / Name</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="user-name" value="{$computer.username}" name="username" placeholder="姓名 / Name">
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>
+              <div class="am-u-sm-9">
+                <input type="email" id="user-email" value="{$computer.email}" name="email" placeholder="输入你的电子邮件 / Email">
+              </div>
+            </div>
+
+       
+            <div class="am-form-group">
+              <label for="user-QQ" class="am-u-sm-3 am-form-label">状态 / States</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="" value="{$computer.states}"   name="states" >
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-weibo" class="am-u-sm-3 am-form-label">故障内容 / Content</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="" value="{$computer.content}"   name="content" placeholder="输入你的内容 / Content">
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <div class="am-u-sm-9 am-u-sm-push-3">
+                <button type="submit" class="am-btn am-btn-primary">保存修改</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <include file="Index/footer" />
